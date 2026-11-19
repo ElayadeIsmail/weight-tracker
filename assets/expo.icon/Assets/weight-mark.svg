@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <!-- Upward progress arc -->
+  <path
+    d="M58 108 C88 58, 168 48, 208 78"
+    stroke="#FFFFFF"
+    stroke-width="22"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M188 58 L214 78 L186 96"
+    stroke="#FFFFFF"
+    stroke-width="22"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Scale body -->
+  <path
+    d="M64 132 H192 C204 132 212 140 212 152 V196 C212 208 204 216 192 216 H64 C52 216 44 208 44 196 V152 C44 140 52 132 64 132 Z"
+    stroke="#FFFFFF"
+    stroke-width="18"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  <!-- Dial -->
+  <circle cx="128" cy="156" r="22" stroke="#FFFFFF" stroke-width="12" fill="none" />
+  <path d="M128 156 L142 144" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" />
+</svg>
