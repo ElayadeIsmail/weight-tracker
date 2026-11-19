@@ -1,0 +1,78 @@
+{
+  "expo": {
+    "name": "Weight Tracker",
+    "slug": "weight-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "weighttracker",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "icon": "./assets/images/icon.png",
+      "bundleIdentifier": "com.weighttracker.app"
+    },
+    "android": {
+      "package": "com.weighttracker.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#1F8A5B",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "./plugins/with-android-tab-icon-size",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#1F8A5B",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 180,
+          "resizeMode": "contain",
+          "dark": {
+            "backgroundColor": "#0E1411",
+            "image": "./assets/images/splash-icon.png"
+          }
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Weight Tracker to access your photos to log meal calories.",
+          "cameraPermission": "Allow Weight Tracker to use your camera to log meal calories."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true,
+            "enableBundleCompression": true,
+            "useLegacyPackaging": true,
+            "buildArchs": [
+              "arm64-v8a"
+            ]
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "1bcc77ec-2122-4a41-8c09-473262b3dbea"
+      }
+    },
+    "owner": "elayade_ismail"
+  }
+}
